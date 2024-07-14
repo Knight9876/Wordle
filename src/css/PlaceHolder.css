@@ -1,0 +1,15 @@
+.word-placeholder {
+  display: flex;
+  gap: 1rem;
+}
+
+.letter-placeholder {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 0.2rem ridge black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
