@@ -195,7 +195,9 @@ const GameBoard = () => {
       {gameResult && (
         <div className="game-result">
           <p>{gameResult}</p>
-          <button type="button">New Game</button>
+          <button type="button" onClick={() => window.location.reload()}>
+            New Game
+          </button>
         </div>
       )}
       ;
