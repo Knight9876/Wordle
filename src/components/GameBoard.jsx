@@ -155,7 +155,7 @@ const GameBoard = () => {
 
   return (
     <>
-      {loading && <Loader />} {/* Render the Loader component while loading */}
+      {loading && <Loader />} {/*Render the Loader component while loading */}
       <div className="game-board">
         {guesses.map((guess, index) => (
           <div key={index} className="word">
@@ -194,9 +194,11 @@ const GameBoard = () => {
       </div>
       {gameResult && (
         <div className="game-result">
-          <p>{gameResult}</p>
+          <div>{gameResult}</div>
           <button type="button" onClick={() => window.location.reload()}>
-            New Game
+            <p>
+              <span>New Game</span>
+            </p>
           </button>
         </div>
       )}
