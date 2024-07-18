@@ -18,14 +18,14 @@ const GameBoard = () => {
     try {
       setLoading(true); // Set loading state to true while fetching
       const response = await fetch(
-        "https://api.datamuse.com/words?sp=?????&max=1000",
+        "https://api.datamuse.com/words?sp=?????&max=1000"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch words");
       }
       const data = await response.json();
       const fiveLetterWords = data.filter(
-        (word) => word.word.length === 5 && word.score > 2000,
+        (word) => word.word.length === 5 && word.score > 2000
       );
       if (fiveLetterWords.length === 0) {
         throw new Error("No suitable words found");
@@ -70,7 +70,7 @@ const GameBoard = () => {
     try {
       setLoading(true); // Set loading state to true while checking word validity
       const response = await fetch(
-        `https://api.datamuse.com/words?sp=${word.toLowerCase()}&max=1`,
+        `https://api.datamuse.com/words?sp=${word.toLowerCase()}&max=1`
       );
       const data = await response.json();
       return (
@@ -114,7 +114,7 @@ const GameBoard = () => {
           newLetterStatus[index] !== "correct" &&
           correctLetters.includes(letter) &&
           correctLetters.filter(
-            (l, i) => l === letter && !matchedIndices.includes(i),
+            (l, i) => l === letter && !matchedIndices.includes(i)
           ).length > 0
         ) {
           newLetterStatus[index] = "incorrect-position";
@@ -202,7 +202,6 @@ const GameBoard = () => {
           </button>
         </div>
       )}
-      ;
     </>
   );
 };
