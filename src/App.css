@@ -4,6 +4,6 @@
 }
 
 body {
-  overflow: hidden;
   margin: 0;
+  height: max-content;
 }
