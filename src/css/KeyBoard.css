@@ -20,7 +20,7 @@ button {
   margin: 0.2rem;
   width: 4.5rem;
   height: 4.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border: 0.1rem ridge black;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -42,5 +42,18 @@ button:active {
 @media (max-width: 975px) {
   button {
     width: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  button {
+    width: 2.5rem;
+  }
+}
+
+@media (max-width: 470px) {
+  button {
+    width: 2rem;
+    height: 3.5rem;
   }
 }
