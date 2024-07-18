@@ -32,6 +32,7 @@ const GameBoard = () => {
       }
       const randomIndex = Math.floor(Math.random() * fiveLetterWords.length);
       setTargetWord(fiveLetterWords[randomIndex].word.toUpperCase());
+      console.log(fiveLetterWords[randomIndex].word.toUpperCase());
     } catch (error) {
       console.error("Error fetching random word:", error);
       // Handle error as needed, e.g., show a message to the user

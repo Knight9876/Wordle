@@ -1,10 +1,15 @@
 import React from "react";
-import "../css/Header.css"; // Import simple CSS
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfo } from "@fortawesome/free-solid-svg-icons";
+import "../css/Header.css";
 
-const Header = () => {
+const Header = ({ showInfo }) => {
   return (
     <header className="header">
       <h1 className="title">Wordle</h1>
+      <button className="info-button" onClick={showInfo}>
+        <FontAwesomeIcon icon={faInfo} />
+      </button>
     </header>
   );
 };

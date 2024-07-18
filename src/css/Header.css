@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  box-sizing: border-box;
 }
 
 .title {
@@ -16,15 +16,28 @@
   font-size: 2.5rem;
 }
 
-/* Ensure body and html take up full height and have no margin */
+.info-button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 0.1rem ridge white;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.2rem;
+  right: 0.5rem;
+}
+
 html,
 body {
   margin: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 body {
-  padding-top: 100px; /* Adjust according to the height of your header to avoid content being hidden behind the header */
+  padding-top: 100px;
 }
