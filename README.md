@@ -35,8 +35,8 @@ The Wordle Game is a single-player word-guessing game where the player tries to 
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/your-username/wordle-game.git
-   cd wordle-game
+   git clone https://github.com/Knight9876/Wordle.git
+   cd Wordle
    ```
 
 2. **Install Dependencies**:
